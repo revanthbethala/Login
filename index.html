@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/icon.png">
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <main>
+        <div class="main__login_img">
+            <img src="assets/login.png" alt="">
+        </div>
+        <div class="main__login__form">
+            <h1> LOGIN </h1>
+            <form action="#form" target="_blank">
+                <div class="details_wrap">
+                    <label for="email">Email or Username</label><br>
+                    <input type="text" required id="email" placeholder="Your Email or Username"><br>
+                    <label for="pwd">Password</label><br>
+                    <input type="password" name="password" id="password" required placeholder="Your Password"><br>
+                </div>
+                <div class="form__wrap">
+                    <div class="checkbox_wrap">
+                        <input type="checkbox" value="remember me" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#fogot">Forgot Password?</a><br><br>
+                </div>
+                <input type="submit" value="Login" id="submit" onclick="validate(event)"><br>
+            </form>
+            <p id="warning"></p>
+            <p id="main__login__form_alternate">or connect with</p>
+            <div class="accounts">
+                <button class="accounts__google">
+                    <img src="assets/google.png" alt="google">
+                    Google
+                </button>
+                <button class="accounts__facebook">
+                    <img src="assets/facebook.webp" alt="facebook">
+                    Facebook
+                </button>
+            </div>
+            <p class="register">Don't have an account? <a href="/registration/index.html" target="_blank">Register</a>
+            </p>
+        </div>
+        <div id="successful">
+            <img src="/registration/assets/tickmark.png" />
+            <h2>
+                Login Successful
+            </h2>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

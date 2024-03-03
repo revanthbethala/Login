@@ -1,0 +1,247 @@
+* {
+    font-family: Inter, "sans-serif", arial, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background: linear-gradient(to bottom left, rgb(177, 223, 239), rgb(200, 224, 221));
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: hsla(0, 0%, 82%, 0.925);
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.main__login__form h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(57, 111, 228);
+}
+
+main .main__login_img {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main .main__login_img img {
+    width: 500px;
+    height: 500px;
+}
+
+.main__login__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+input[type=text], input[type=password] {
+    width: 320px;
+    cursor: text;
+    height: 40px;
+    border: none;
+    font-size: 15px;
+    margin: 15px 0;
+    padding: 0 10px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+input[type=submit] {
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 0;
+    margin-top: 10px;
+    font-size: 19px;
+    background: linear-gradient(to left top, rgb(41, 41, 202), rgb(56, 211, 216));
+    color: white;
+    border: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+input::placeholder {
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.details_wrap input:hover {
+    border: 1px solid black;
+}
+
+form .checkbox_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form .checkbox_wrap input {
+    width: 16px;
+    height: 16px;
+}
+
+form .checkbox_wrap label {
+    font-size: 16px;
+    margin: 4px;
+}
+
+form .form__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form .form__wrap a {
+    margin: 2px 0 0 70px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-size: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#main__login__form_alternate {
+    color: gray;
+}
+
+.accounts {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.accounts button {
+    cursor: pointer;
+    height: 40px;
+    padding: 25px 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: rgb(56, 56, 249);
+    background: white;
+    border: 1px solid rgb(54, 53, 53);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.accounts button:hover {
+    background-color: #d6dada;
+}
+
+.accounts img {
+    width: 30px;
+    height: 30px;
+}
+
+#warning {
+    color: red;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#successful {
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 10px;
+    display: none;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#successful img {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#successful h2 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: green;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width:490px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        background: none;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    main .main__login_img img {
+        display: none;
+    }
+
+    .accounts img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .accounts button {
+        height: 10px;
+    }
+    #successful{
+        width: 60%;
+    }
+}
